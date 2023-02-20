@@ -15,15 +15,15 @@ const images = [
 
 const listElem = document.querySelector('.gallery');
 const galleryImg = images
-.map((img) => `<li><img src = "${img.url}" alt = "${img.alt}" width = "300" height ="200"></li>`)
+.map((img) => `<li><img src = "${img.url}" alt = "${img.alt}" width = "500" height ="300"></li>`)
 .join('');
 listElem.insertAdjacentHTML('beforeend', galleryImg);
 listElem.style.cssText =`
   display: flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 25px;
 `;
 
 
