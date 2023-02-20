@@ -9,10 +9,11 @@ function onSubmit(action) {
     const formElements = action.currentTarget.elements;
     const email = formElements.email.value.trim();
     const password = formElements.password.value.trim();
-    const formFields = {email, password};
-    if(email === '' || password === ''){
+    const formFields = { email, password };
+    if (email === '' || password === '') {
         alert(warning);
+        return;
     }
-console.log(formFields);
-action.currentTarget.reset();
+    console.log(formFields);
+    action.currentTarget.reset();
 }
