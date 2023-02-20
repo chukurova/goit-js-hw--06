@@ -11,7 +11,7 @@ function onSubmit(action) {
     const password = formElements.password.value.trim();
     const formFields = {email, password};
     if(email === '' || password === ''){
-        alert(warning);
+       return alert(warning);
     }
 console.log(formFields);
 action.currentTarget.reset();
